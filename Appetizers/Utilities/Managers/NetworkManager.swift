@@ -13,7 +13,7 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
     
-    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
+    static let baseURL = "https://68b8946fb715405043289d39.mockapi.io/api/1/"
     private let appetizerURL = baseURL + "appetizers"
     
     private init() {}
@@ -59,11 +59,19 @@ final class NetworkManager {
         }
         
         let (data, _) = try await URLSession.shared.data(from: url)
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print("📥 Raw JSON: \(jsonString)")
+        }
         
         do {
             let decoder = JSONDecoder()
-            return try decoder.decode(AppetizerResponse.self, from: data).request
+            print(decoder)
+            return try decoder.decode([Appetizer].self, from: data)
+        } catch let decodingError as DecodingError {
+            print("❌ Decoding error: \(decodingError)")
+            throw APError.invalidData
         } catch {
+            print("❌ Other error: \(error)")
             throw APError.invalidData
         }
     }
