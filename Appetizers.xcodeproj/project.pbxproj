@@ -13,6 +13,7 @@
 		042690732E68BD6100C95B26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042690722E68BA2100C95B26 /* NetworkManager.swift */; };
 		042690752E68BDB200C95B26 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042690742E68BDB200C95B26 /* APError.swift */; };
 		042690762E68BE9D00C95B26 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042690652E68B34400C95B26 /* AppetizerListView.swift */; };
+		0426907A2E68BF6000C95B26 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042690792E68BF6000C95B26 /* AppetizerListCell.swift */; };
 		04EF1EAC2E678ED3003A6DEE /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF1EAB2E678ED3003A6DEE /* AppetizersApp.swift */; };
 		04EF1EAE2E678ED3003A6DEE /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF1EAD2E678ED3003A6DEE /* AppetizerTabView.swift */; };
 		04EF1EB02E678ED4003A6DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EF1EAF2E678ED4003A6DEE /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		042690702E68BA1400C95B26 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = ../../../../../Alert.swift; sourceTree = "<group>"; };
 		042690722E68BA2100C95B26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		042690742E68BDB200C95B26 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APError.swift; path = ../../../../../APError.swift; sourceTree = "<group>"; };
+		042690792E68BF6000C95B26 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppetizerListCell.swift; path = ../../../../../AppetizerListCell.swift; sourceTree = "<group>"; };
 		04EF1EA82E678ED3003A6DEE /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EF1EAB2E678ED3003A6DEE /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		04EF1EAD2E678ED3003A6DEE /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				042690642E68B33800C95B26 /* AppetizerListView */,
+				04EF1EAD2E678ED3003A6DEE /* AppetizerTabView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -134,6 +137,22 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		042690772E68BF3C00C95B26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				042690782E68BF4200C95B26 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		042690782E68BF4200C95B26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				042690792E68BF6000C95B26 /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		04EF1E9F2E678ED3003A6DEE = {
 			isa = PBXGroup;
 			children = (
@@ -157,11 +176,11 @@
 		04EF1EAA2E678ED3003A6DEE /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				042690772E68BF3C00C95B26 /* Views */,
 				0426906B2E68B91B00C95B26 /* Utilities */,
 				042690682E68B3E000C95B26 /* Model */,
 				042690632E68B32800C95B26 /* Screens */,
 				04EF1EAB2E678ED3003A6DEE /* AppetizersApp.swift */,
-				04EF1EAD2E678ED3003A6DEE /* AppetizerTabView.swift */,
 				04EF1EAF2E678ED4003A6DEE /* Assets.xcassets */,
 				04EF1EB12E678ED4003A6DEE /* Preview Content */,
 			);
@@ -328,6 +347,7 @@
 				0426906A2E68B3F800C95B26 /* Appetizer.swift in Sources */,
 				04EF1EAE2E678ED3003A6DEE /* AppetizerTabView.swift in Sources */,
 				042690752E68BDB200C95B26 /* APError.swift in Sources */,
+				0426907A2E68BF6000C95B26 /* AppetizerListCell.swift in Sources */,
 				042690762E68BE9D00C95B26 /* AppetizerListView.swift in Sources */,
 				042690672E68B37600C95B26 /* AppetizerListViewModel.swift in Sources */,
 				04EF1EAC2E678ED3003A6DEE /* AppetizersApp.swift in Sources */,
