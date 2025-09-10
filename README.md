@@ -21,7 +21,7 @@ This project was created for learning SwiftUI, state management, and working wit
 
 
 Clone the repo:
-git clone https://github.com/your-username/Appetizers.git  
+git clone https://github.com/Djihanegh/Appetizers.git  
 Open Appetizers.xcodeproj (or .xcworkspace) in Xcode 15+  
 Run the app on an iOS 17 simulator or device  
 📸 Screenshots  
